@@ -484,7 +484,7 @@ PrefabInstance:
     - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
         type: 3}
       propertyPath: bossAggro
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2721824856492152944, guid: 93335aa933e6c2947befd358d2ca3e62,
         type: 3}
