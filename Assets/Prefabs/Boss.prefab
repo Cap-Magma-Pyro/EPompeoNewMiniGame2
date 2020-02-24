@@ -30,6 +30,66 @@ Transform:
   m_Father: {fileID: 6945942373613859943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2721824856492152944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5559597878766908792}
+  m_Layer: 0
+  m_Name: WeakSpotOne
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5559597878766908792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721824856492152944}
+  m_LocalRotation: {x: 0, y: 0, z: 0.025304608, w: 0.9996798}
+  m_LocalPosition: {x: -2, y: -0.56, z: -0.98}
+  m_LocalScale: {x: 11.76, y: 3.46, z: 2.69}
+  m_Children: []
+  m_Father: {fileID: 6945942373613859943}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.9}
+--- !u!1 &3671946060019834948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1642240915851798689}
+  m_Layer: 0
+  m_Name: WeakSpotTwo
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1642240915851798689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671946060019834948}
+  m_LocalRotation: {x: 0.00047474564, y: 0.018755225, z: 0.025300156, w: 0.9995039}
+  m_LocalPosition: {x: 2.01, y: -0.56, z: -0.98}
+  m_LocalScale: {x: 11.76, y: 3.46, z: 2.69}
+  m_Children: []
+  m_Father: {fileID: 6945942373613859943}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 2.15, z: 2.9}
 --- !u!1 &6514347764291367272
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +154,8 @@ Transform:
   - {fileID: 7505956212656437622}
   - {fileID: 1560815796768610062}
   - {fileID: 6717324956491756323}
+  - {fileID: 5559597878766908792}
+  - {fileID: 1642240915851798689}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -210,6 +272,7 @@ MonoBehaviour:
   shot: {fileID: 6090681310573177726, guid: 8e0762fb8c5030a468da8eaffa7db174, type: 3}
   shotSpawn: {fileID: 7505956212656437622}
   shotStart: {fileID: 1560815796768610062}
+  bigShotSpawn: {fileID: 0}
   shotDelay: 1
   playArea: {fileID: 0}
 --- !u!1 &7258189483507505494

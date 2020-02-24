@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4913148157249422645}
   - component: {fileID: 9128978938046660719}
   - component: {fileID: -4786049284139189188}
+  - component: {fileID: 8617836271006660432}
   m_Layer: 0
   m_Name: Boss Shot
   m_TagString: Untagged
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: -10}
+--- !u!114 &8617836271006660432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090681310573177726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8ab226f65646d4f93ee0bda4accff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToDestroy: Player

@@ -8,7 +8,10 @@ public class Enemy : MonoBehaviour
     public GameObject shot;
     public Transform shotSpawn;
     public Transform shotStart;
+    public Transform bigShotSpawn;
     public float shotDelay;
+
+    public int bossAggro = 5;
 
     bool canFire = true;
 
@@ -21,6 +24,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         direction.x = Random.Range(-direction.x, direction.x);
         rb.velocity = direction;
+        speed = 10;
 
         playArea = GameObject.Find("PlayArea").GetComponent<BoxCollider2D>();
 
@@ -50,6 +54,35 @@ public class Enemy : MonoBehaviour
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
             Instantiate(shot, shotStart.position, shotStart.rotation);
             yield return new WaitForSeconds(shotDelay);
+        }
+    }
+
+    void BossPhase()
+    {
+        switch (bossAggro)
+        {
+            case 0:
+
+                break;
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            default:
+
+                break;
+
         }
     }
 }
