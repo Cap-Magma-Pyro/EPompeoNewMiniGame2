@@ -28,10 +28,10 @@ public class ShipController : MonoBehaviour
         float clampY = Mathf.Clamp(rb.position.y, playArea.bounds.min.y, playArea.bounds.max.y);
         rb.position = new Vector2(clampX, clampY);
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Jump"))
+        // {
+        //     Shoot();
+        // }
 
         if (Input.GetButton("Jump") && canFire)
         {

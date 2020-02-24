@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &79751966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6717324956491756323, guid: 93335aa933e6c2947befd358d2ca3e62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1147329772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466119063
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,10 +460,41 @@ PrefabInstance:
       propertyPath: playArea
       value: 
       objectReference: {fileID: 1557823927}
+    - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: shotDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: bigShotSpawn
+      value: 
+      objectReference: {fileID: 79751966}
+    - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: bigShotDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: bigShot
+      value: 
+      objectReference: {fileID: 2943611108828088617, guid: e07f5d81bc664104eb4aac5f8de07f68,
+        type: 3}
+    - target: {fileID: -932809495539733900, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: bossAggro
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721824856492152944, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2972765162379848294, guid: 93335aa933e6c2947befd358d2ca3e62,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.03268969
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 2972765162379848294, guid: 93335aa933e6c2947befd358d2ca3e62,
         type: 3}
@@ -473,6 +510,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 6.416587
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972765162379848294, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972765162379848294, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671946060019834948, guid: 93335aa933e6c2947befd358d2ca3e62,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6945942373613859943, guid: 93335aa933e6c2947befd358d2ca3e62,
         type: 3}
@@ -534,8 +586,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2972765162379848294, guid: 93335aa933e6c2947befd358d2ca3e62, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93335aa933e6c2947befd358d2ca3e62, type: 3}
 --- !u!1 &1557823925
 GameObject:
@@ -624,35 +675,3 @@ Transform:
   m_Father: {fileID: 1121189263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2114173433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6945942373613859993, guid: 93335aa933e6c2947befd358d2ca3e62,
-    type: 3}
-  m_PrefabInstance: {fileID: 1147329772}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &2114173434
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114173433}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 2}
-    newSize: {x: 6.4, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.4, y: 2}
-  m_EdgeRadius: 0

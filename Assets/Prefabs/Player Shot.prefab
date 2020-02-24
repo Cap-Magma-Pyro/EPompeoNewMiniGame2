@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: -6491550839508693785}
   - component: {fileID: 5372535404544981545}
   - component: {fileID: 6999324153161368713}
-  - component: {fileID: 5366266072849172748}
   m_Layer: 0
   m_Name: Player Shot
-  m_TagString: Untagged
+  m_TagString: PlayerShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3333334, y: 1.3333334}
+  m_Size: {x: 0.11, y: 0.19}
   m_EdgeRadius: 0
 --- !u!114 &5372535404544981545
 MonoBehaviour:
@@ -145,16 +144,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5366266072849172748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3304428437336521055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8ab226f65646d4f93ee0bda4accff8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToDestroy: Enemy

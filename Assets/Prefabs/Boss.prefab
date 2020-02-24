@@ -39,6 +39,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5559597878766908792}
+  - component: {fileID: 8507508059811738143}
+  - component: {fileID: 1344907453501169977}
   m_Layer: 0
   m_Name: WeakSpotOne
   m_TagString: Enemy
@@ -54,12 +56,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2721824856492152944}
   m_LocalRotation: {x: 0, y: 0, z: 0.025304608, w: 0.9996798}
-  m_LocalPosition: {x: -2, y: -0.56, z: -0.98}
-  m_LocalScale: {x: 11.76, y: 3.46, z: 2.69}
+  m_LocalPosition: {x: -2.01, y: -0.33, z: -0.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6945942373613859943}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.9}
+--- !u!58 &8507508059811738143
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721824856492152944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &1344907453501169977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721824856492152944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ea90104974a3c4ea67718df5184d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: -932809495539733900}
 --- !u!1 &3671946060019834948
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +100,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1642240915851798689}
+  - component: {fileID: 382191099693997351}
+  - component: {fileID: 3181754272835406347}
   m_Layer: 0
   m_Name: WeakSpotTwo
   m_TagString: Enemy
@@ -84,12 +117,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3671946060019834948}
   m_LocalRotation: {x: 0.00047474564, y: 0.018755225, z: 0.025300156, w: 0.9995039}
-  m_LocalPosition: {x: 2.01, y: -0.56, z: -0.98}
-  m_LocalScale: {x: 11.76, y: 3.46, z: 2.69}
+  m_LocalPosition: {x: 2, y: -0.31, z: -0.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6945942373613859943}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 2.15, z: 2.9}
+--- !u!58 &382191099693997351
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671946060019834948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &3181754272835406347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671946060019834948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ea90104974a3c4ea67718df5184d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: -932809495539733900}
 --- !u!1 &6514347764291367272
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +305,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.34}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -270,10 +332,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 4, y: 0}
   shot: {fileID: 6090681310573177726, guid: 8e0762fb8c5030a468da8eaffa7db174, type: 3}
+  bigShot: {fileID: 0}
   shotSpawn: {fileID: 7505956212656437622}
   shotStart: {fileID: 1560815796768610062}
   bigShotSpawn: {fileID: 0}
+  bigShotDelay: 0
   shotDelay: 1
+  speed: 1
+  damageCount: 0
+  bossAggro: 0
   playArea: {fileID: 0}
 --- !u!1 &7258189483507505494
 GameObject:
